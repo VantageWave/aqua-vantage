@@ -1,0 +1,49 @@
+# Ignore build output
+build
+out
+
+# Ignore coverage reports
+coverage
+
+# Ignore node_modules
+node_modules
+
+# Ignore version control directories
+.git
+.hg
+
+# Ignore compiled TypeScript files
+*.js
+*.jsx
+
+# Ignore compiled TypeScript declaration files
+*.d.ts
+
+# Ignore bundled JavaScript files
+dist
+bundle
+
+# Ignore environment-specific files
+.env*
+.env.local
+.env.development
+.env.test
+.env.production
+
+# Ignore editor-specific files
+.vscode
+.idea
+
+# Ignore log files
+*.log
+
+# Ignore temporary files
+*.tmp
+
+# Ignore lock files
+yarn.lock
+package-lock.json
+npm-shrinkwrap.json
+
+# Ignore any custom configuration files
+*.config.js
