@@ -5,5 +5,5 @@ export default async function HomeLayout({
 }: {
   children: React.ReactNode;
 }) {
-  return <PageContainer children={children}></PageContainer>;
+  return <PageContainer>{children}</PageContainer>;
 }

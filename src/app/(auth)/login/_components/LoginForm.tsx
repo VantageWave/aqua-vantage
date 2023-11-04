@@ -87,7 +87,7 @@ export const LoginForm = ({ loading, submitted }: LoginFormProps) => {
           onChange={handleInputChange}
           error={Boolean(errors.email)}
         />
-        <FormHelperText>We'll never share your email.</FormHelperText>
+        <FormHelperText>{"We'll never share your email."}</FormHelperText>
         {!!errors.email && (
           <FormHelperText error>{errors.email}</FormHelperText>
         )}
