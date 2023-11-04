@@ -34,7 +34,7 @@ export async function createNewAOIInCatalog(aois: Area[], catalogId: string) {
   });
 
   try {
-    const responses = await Promise.all(newAOIRequests.map((requestBody) => callPostCatalog(requestBody)));
+    const responses = await Promise.all(newAOIRequests.map((requestBody: any) => callPostCatalog(requestBody)));
     // Check if any of the responses failed
     const failedResponse = responses.find((response) => !response.ok);
     if (failedResponse) {
