@@ -10,7 +10,7 @@ import Loading from '@/app/components/PageContainer/loading';
 const Grid = Grid2;
 
 const AOIGrid = ({ id }: { id: string }) => {
-  const { data, error } = useSWR<AOICardProps[], Error>(getCatalogUrl(id), async (url) => {
+  const { data, error } = useSWR<AOICardProps[], Error>(getCatalogUrl(id), async (url: string) => {
     const response = await fetch(url);
     const data = await response.json();
     return data.data;
