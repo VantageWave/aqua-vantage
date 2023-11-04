@@ -80,7 +80,7 @@ function CustomAppBar() {
   };
 
   return (
-    <AppBar position="static" style={{ borderBottom: "1px solid white"}}>
+    <AppBar position="static" style={{ borderBottom: "1px solid rgba(120, 120, 120,0.95)", backgroundColor: "black"}}>
       <Container maxWidth="xl" style={{ padding:"8px 20px"}}>
         <Toolbar disableGutters>
           <Image src="/wwlogo.png" alt="wwlogo" width={36} height={36} style={{ marginRight: "20px"}}/>

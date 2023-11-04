@@ -2,6 +2,7 @@
 'use client';
 import { useState, useEffect } from 'react';
 import { FeatureGroup, MapContainer, TileLayer } from 'react-leaflet';
+import { useRouter } from 'next/navigation';
 import 'leaflet/dist/leaflet.css';
 import 'leaflet-draw/dist/leaflet.draw.css';
 import { EditControl } from 'react-leaflet-draw';
@@ -17,6 +18,7 @@ import { useTheme } from '@mui/material/styles';
 
 const Map = () => {
   const theme = useTheme();
+  const router = useRouter();
 
   const [map, setMap] = useState(null);
   const [drawnAreas, setDrawnAreas] = useState<Area[] | []>([]);
@@ -152,7 +154,7 @@ const Map = () => {
               <Typography variant="h4" component="div" sx={{ flexGrow: 1, display: { sm: 'block' }, marginTop: "25px" }}>
                 Areas
               </Typography>
-              <Button size="small" variant="outlined" onClick={() => handleSubmit()} 
+              <Button size="small" variant="outlined" onClick={() => router.push('/catalogs/catalog/3')} 
               style={{marginTop: "auto", paddingLeft: "32px", display: "block"}}>
                 <span style={{fontSize: 28, position: "absolute", left: 4, top: -10}}>+</span>Add areas to the catalog
               </Button>

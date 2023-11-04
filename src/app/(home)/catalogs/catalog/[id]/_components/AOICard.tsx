@@ -9,7 +9,6 @@ import { AOICardProps } from './types';
 
 export default function AOICard({ id, name, description, long, lat }: AOICardProps) {
   const router = useRouter();
-  console.log('hostname', process.env);
 
   return (
     <Card sx={{ maxWidth: 345, marginTop: 4 }}>
@@ -33,7 +32,8 @@ export default function AOICard({ id, name, description, long, lat }: AOICardPro
         image="/map.png"
         alt="Map"
         sx={{ cursor: 'pointer' }}
-        onClick={() => router.push(`/map?long=${long}&lat=${lat}&zoom=20`)}
+        // onClick={() => router.push(`/map?long=${long}&lat=${lat}&zoom=20`)}
+        onClick={() => router.push('/water')}
       />
       <CardContent>
         <Typography variant="body2" color="text.secondary">
