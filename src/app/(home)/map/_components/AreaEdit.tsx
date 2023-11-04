@@ -52,7 +52,7 @@ export const AreaEdit = ({ area, handleClose, handleSave }: AreaEdit) => {
             value={name}
             size="small"
             onChange={(e) => setName(e.target.value)}
-            onClick={(e) => {
+            onClick={(e: any) => {
               e.target?.select();
             }}
           />

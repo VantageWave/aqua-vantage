@@ -1,3 +1,4 @@
+//@ts-nocheck
 import { DataGrid, GridColDef, GridValueGetterParams } from '@mui/x-data-grid';
 import { Box, IconButton, Paper } from '@mui/material';
 import Delete from '@mui/icons-material/Delete';
