@@ -148,7 +148,7 @@ const Map = () => {
         </Paper>
       </Grid>
       <Grid item xs={5} >
-        <Grid container direction="column" spacing={3} style={{ height: '100%', width: "100%" }}>
+        <Grid container flexDirection="column" flexWrap="nowrap" spacing={3} style={{ height: '100%', width: "100%" }}>
           <Grid item>
             <Grid item display="flex" justifyContent="space-between" flexDirection="row" alignItems="center">
               <Typography variant="h4" component="div" sx={{ flexGrow: 1, display: { sm: 'block' }, marginTop: "25px" }}>
