@@ -123,7 +123,7 @@ const Water = () => {
                     },
                 }}
             >
-                <div style={{ height: "100%", border: "1px solid rgba(229, 231, 235,0.15)", overflow: "hidden" }}>
+                <div style={{ height: "100%", border: "1px solid rgba(229, 231, 235,0.15)", overflowX: "hidden"}}>
                     <Card sx={{ maxWidth: 370 }}>
                         <CardContent style={{marginTop: "16px"}}>
                             <Stack direction="row" justifyContent="space-between" alignItems="center" sx={{ marginBottom: "8px" }}>

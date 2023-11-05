@@ -54,6 +54,7 @@ function createData(id: string, name: string, description: string, long: string,
 const catalogData = {
   '1': [createData('0', 'London', 'UK', '51.505', '-0.09'), createData('1', 'Manchester', 'UK', '53.4830', '-2.2440')],
   '2': [
+    createData('0', 'Węgrzce Wielkie', 'Poland', '40.7128', '-74.0060'),
     createData('0', 'Warsaw', 'Poland', '52.2297', '21.0122'),
     createData('1', 'Krakow', 'Poland', '50.0647', '19.9450'),
   ],

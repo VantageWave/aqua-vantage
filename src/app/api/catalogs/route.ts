@@ -7,7 +7,7 @@ function createData(id: string, date: string, name: string, description: string,
 
 const rows = [
   createData('1', '1 Jan, 2019', 'UK', 'Places in UK', 20),
-  createData('2', '12 Feb, 1999', 'PL', 'Places in Poland', 5),
+  createData('2', '12 Feb, 1999', 'PL', 'Places in Poland', 1),
   createData('3', '5 Mar, 2021', 'US', 'Places in United States', 2),
   createData('4', '20 Mar, 1997', 'DE', 'Places in Germany', 3),
   createData('5', '8 Aug, 2005', 'FR', 'Places in France', 15),
