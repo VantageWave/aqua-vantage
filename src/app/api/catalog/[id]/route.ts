@@ -58,7 +58,7 @@ const catalogData = {
     createData('1', 'Krakow', 'Poland', '50.0647', '19.9450'),
   ],
   '3': [
-    createData('0', 'New York', 'USA', '40.7128', '-74.0060'),
+    createData('0', 'Węgrzce Wielkie', 'Poland', '40.7128', '-74.0060'),
     createData('1', 'Los Angeles', 'USA', '34.0522', '-118.2437'),
   ],
   '4': [

@@ -29,7 +29,7 @@ export default function AOICard({ id, name, description, long, lat }: AOICardPro
       <CardMedia
         component="img"
         height="194"
-        image="/map.png"
+        image="/map_full.png"
         alt="Map"
         sx={{ cursor: 'pointer' }}
         // onClick={() => router.push(`/map?long=${long}&lat=${lat}&zoom=20`)}

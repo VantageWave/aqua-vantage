@@ -28,7 +28,7 @@ const AOIGrid = ({ id }: { id: string }) => {
     <Grid container columns={16}>
       <Grid xs={0} sm={0} md={1} lg={2} xl={2} />
       <Grid container xs={16} sm={16} md={14} lg={12} xl={12} spacing={1}>
-        {data.map((cardData) => (
+        {[data[0]].map((cardData) => (
           <Grid xs={16} sm={8} md={5} lg={5} xl={4} key={cardData.id}>
             <AOICard {...cardData} />
           </Grid>
