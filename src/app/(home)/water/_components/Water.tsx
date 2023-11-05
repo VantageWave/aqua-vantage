@@ -9,26 +9,25 @@ const Water = () => {
     const [waterMaskEnabled, setWaterMaskEnabled] = React.useState(false);
     const [rhsPanelOpen, setRhsPanelOpen] = React.useState(false);
 
-    // Function to handle the panel toggle
     const handlePanelToggle = () => {
         setWaterMaskEnabled(!waterMaskEnabled);
     };
 
     const buttonStyle = {
-        border: '1px solid rgba(255, 255, 255,0.45)', // light grey border
+        border: '1px solid rgba(255, 255, 255,0.45)',
         borderRadius: 0,
-        height: '72px', // typical subheader height
-        width: '72px', // making it square, change as needed
+        height: '72px',
+        width: '72px',
         '&:hover': {
-            backgroundColor: "#2e2e2e", // slightly darker on hover
+            backgroundColor: "#2e2e2e",
         },
     };
 
     const overlayStyle = {
-        position: 'absolute', // Position over the map
-        left: 35, // Spacing from the top
-        top: 190, // Spacing from the right
-        zIndex: 1000, // Make sure it's above the map
+        position: 'absolute',
+        left: 35,
+        top: 190,
+        zIndex: 1000,
         backgroundColor: 'rgba(0, 120, 215, 0.5)',
         borderRadius: '8px',
         padding: '10px',
@@ -108,7 +107,6 @@ const Water = () => {
                     />
                 </Grid>
             </Grid>
-            {/* below right hand side panel that covers the map: it has name, description and tags */}
             <Drawer
                 anchor="right"
                 open={rhsPanelOpen}
@@ -252,9 +250,6 @@ const Water = () => {
                         </Card>
                     </div>
                 </div>
-                {/* Panel content here */}
-                {/* Three sections: Details, Coordinates, Metrics Attached */}
-                {/* Details section with Name, Description and Tag content; Coordinates section with location coordinates, area and volume estimation; Metrics attached with read-only colorful tags: Water Quality Index, Water type, Chloro; Models enabled section with NDWI and Water Type read-only tags */}
             </Drawer>
         </Grid>
     );
