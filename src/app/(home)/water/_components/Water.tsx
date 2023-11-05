@@ -7,7 +7,7 @@ import { Stack } from '@mui/system';
 
 const Water = () => {
     const [waterMaskEnabled, setWaterMaskEnabled] = React.useState(false);
-    const [rhsPanelOpen, setRhsPanelOpen] = React.useState(true);
+    const [rhsPanelOpen, setRhsPanelOpen] = React.useState(false);
 
     // Function to handle the panel toggle
     const handlePanelToggle = () => {
